@@ -29,7 +29,6 @@ public class ADF2 {
             System.out.println("Enter your student of phone:");
             String phone = scanner.nextLine();
             students.setPhone(phone);
-            statement.executeUpdate("INSERT INTO student VALUES ('" + students.getId() + "', '" + students.getName() + "', '" + students.getAddress() + "', " + students.getPhone() + " );" );
 
         } catch (SQLException e) {
             e.printStackTrace();
